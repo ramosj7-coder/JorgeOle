@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jorge A. Ramos, MD · Clinical AI</title>
+<meta name="description" content="Jorge A. Ramos, MD. Clinical AI product manager working on how health systems specify, govern and adopt AI. Author of FAPM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F7F4EE;
+    --ink: #1C1B19;
+    --muted: #5C5A55;
+    --rule: #E2DDD3;
+    --mark: #B3402A;
+    --mark-soft: #F3E3DD;
+    --serif: "Newsreader", Georgia, serif;
+    --sans: "IBM Plex Sans", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151412;
+      --ink: #ECE7DE;
+      --muted: #A39E94;
+      --rule: #2E2B27;
+      --mark: #E07A5F;
+      --mark-soft: #3A2620;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 17px/1.65 var(--sans);
+  }
+  a { color: inherit; text-decoration-color: var(--mark); text-underline-offset: 3px; }
+  a:hover { color: var(--mark); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 96px 0 56px; border-bottom: 1px solid var(--rule); }
+  .tag { font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mark); }
+  h1 { font: 600 clamp(40px, 6vw, 56px)/1.05 var(--serif); margin: 16px 0 20px; letter-spacing: -.01em; }
+  .lede { font-size: 20px; line-height: 1.55; color: var(--muted); max-width: 34em; margin: 0; }
+  .lede strong { color: var(--ink); font-weight: 500; }
+
+  section { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; padding: 56px 0; border-bottom: 1px solid var(--rule); }
+  .node { font: 500 13px/1.4 var(--mono); color: var(--muted); padding-top: 6px; }
+  .node b { display: block; color: var(--mark); font-weight: 500; }
+  h2 { font: 600 28px/1.2 var(--serif); margin: 0 0 16px; }
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+
+  .project { display: block; text-decoration: none; border: 1px solid var(--rule); border-radius: 6px; padding: 24px; transition: border-color .15s; }
+  .project:hover { border-color: var(--mark); color: inherit; }
+  .project h3 { font: 600 22px/1.25 var(--serif); margin: 0 0 8px; }
+  .project p { color: var(--muted); }
+  .sig { font: 400 13px/1.7 var(--mono); background: var(--mark-soft); border-radius: 4px; padding: 12px 14px; margin: 16px 0; white-space: pre; overflow-x: auto; color: var(--ink); }
+  .meta { font: 500 12px/1 var(--mono); letter-spacing: .04em; color: var(--mark); }
+
+  .convictions { list-style: none; margin: 0; padding: 0; }
+  .convictions li { padding: 16px 0; border-top: 1px solid var(--rule); }
+  .convictions li:first-child { border-top: 0; padding-top: 0; }
+  .convictions strong { display: block; font: 600 19px/1.35 var(--serif); margin-bottom: 4px; }
+  .convictions span { color: var(--muted); }
+
+  .links { list-style: none; margin: 0; padding: 0; font-family: var(--mono); font-size: 15px; }
+  .links li { padding: 6px 0; }
+  .links .k { display: inline-block; width: 90px; color: var(--muted); }
+
+  footer { padding: 40px 0 64px; font: 400 13px/1.6 var(--mono); color: var(--muted); }
+
+  @media (max-width: 640px) {
+    .sig { white-space: pre-wrap; word-break: break-word; }
+    header { padding: 64px 0 40px; }
+    section { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 40px 0; }
+    .node b { display: inline; margin-right: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="tag">Clinical AI · Specification · Adoption</div>
+    <h1>Jorge A. Ramos, MD</h1>
+    <p class="lede">I work on the part of clinical AI that happens after the model is built: <strong>how a health system specifies it, governs it, and gets clinicians to actually use it.</strong></p>
+  </header>
+
+  <section id="about">
+    <div class="node"><b>N1</b>About</div>
+    <div>
+      <p>I'm a physician and an AI product manager at an academic health system. Before that I spent six years building inside the EHR as a physician builder, which is where I learned that most clinical software fails in the workflow, not in the code.</p>
+      <p>Today I evaluate AI vendors, design governance, build agentic workflows, and teach clinicians how these tools work. I'm completing a Master of Decision Analytics at VCU. <!-- guard:allow --></p>
+      <p>What I keep asking is less "does it work?" than "why does it work, and where does that stop being true?"</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="node"><b>N2</b>Work</div>
+    <div>
+      <h2>Open work</h2>
+      <a class="project" href="https://github.com/ramosj7-coder/fapm">
+        <div class="meta">FAPM · v0.1 · specification + checker</div>
+        <h3>Feature-Annotated Process Models</h3>
+        <p>A way to specify a clinical AI workflow so the governance committee, the engineers and the auditor are reading the same document. Each step declares what it needs, sees, reads and produces.</p>
+        <div class="sig">Node N = { F_required, F_available, F_consumed, F_produced }</div>
+        <p>Run on an ambient scribe workflow, the checker finds six gaps before go-live. One of them: no step defines which version of the note actually gets signed.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="convictions">
+    <div class="node"><b>N3</b>Convictions</div>
+    <div>
+      <ul class="convictions">
+        <li><strong>Deployed is not validated. Validated is not adopted.</strong><span>Three stages, three sets of requirements. Go-live is where the work starts.</span></li>
+        <li><strong>Workflow first, technology second.</strong><span>A tool inherits every weakness of the workflow it lands in.</span></li>
+        <li><strong>Literacy before tools.</strong><span>A governance framework is only as good as the people who can perform it.</span></li>
+        <li><strong>Champions are the mechanism.</strong><span>Adoption spreads, or stalls, through the clinicians you ask to lead it.</span></li>
+        <li><strong>AI belongs on the care team, not in place of it.</strong><span>Pattern recognition at population scale, feeding human judgment in the gray zone.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="node"><b>N4</b>Contact</div>
+    <div>
+      <ul class="links">
+        <li><span class="k">linkedin</span><a href="https://www.linkedin.com/in/jorge8ramos">in/jorge8ramos</a></li>
+        <li><span class="k">github</span><a href="https://github.com/ramosj7-coder">ramosj7-coder</a></li>
+        <li><span class="k">email</span><a href="mailto:jorge8ramos@gmail.com">jorge8ramos@gmail.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Views here are my own and do not represent any employer.</footer>
+
+</div>
+</body>
+</html>
