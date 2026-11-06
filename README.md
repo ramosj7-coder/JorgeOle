@@ -1,2 +1,2 @@
 # JorgeOle
-Personal repo for healthcare AI/ML organization
+Personal repo for organization
