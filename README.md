@@ -21,3 +21,4 @@ Physician and clinical AI product manager at an academic health system. Six year
 ---
 
 Views here are my own and do not represent any employer.
+Personal repo for organization
