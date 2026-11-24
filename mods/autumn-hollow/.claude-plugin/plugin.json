@@ -1,0 +1,6 @@
+{
+  "name": "autumn-hollow",
+  "version": "0.1.0",
+  "description": "A cozy autumn castle backdrop with falling leaves, colors that follow Eastern time from day to night, and a usage meter above the prompt.",
+  "types": "./types/index.d.ts"
+}

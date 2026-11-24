@@ -38,3 +38,4 @@ and only with the owner's approval.
 - `README.md`: hub index linking to separate project repos
 - `docs/`: GitHub Pages portfolio site
 - `scripts/` and `.githooks/`: content guard and the pre-push hook
+- `mods/`: Claude Code mods (themes, panels) kept for reuse
